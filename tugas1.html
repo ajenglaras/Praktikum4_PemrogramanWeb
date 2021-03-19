@@ -1,0 +1,45 @@
+<html>
+    <head>
+        <title>TUGAS 1</title> <!--memberikan judul pada tab browser-->
+        <script src="jquery-3.6.0.min.js"></script> <!--memanggil file jquery yang telah disediakan-->
+        <script type="text/javascript"> /*menambahkan script dengan tipe javascript*/
+        $(document).ready(function(){ /*menambahkan fungsi yang akan dieksekusi di bawahnya*/
+        $(".sembunyi").click(function() {$("#foto").hide("slow") }); /*menambahkan fungsi pada tombol sembunyi, jika diklik item hilang*/
+        $(".tampil").click(function() {$("#foto").show("slow") }); /*menambahkan fungsi pada tombol tampil, jika diklik item tampil*/
+        });
+        </script>
+        <style type="text/css"> /*memberikan style css*/
+            body{ /*memberikan style pada body*/
+                color:black; /*text berwarna hitam*/
+                background-color: lightblue; /*background berwarna lightblue*/
+                text-align: center; /*meletakkan text beserta item di tengah halaman web*/
+            }
+            .sembunyi{ /*memberikan style pada tombol sembunyi*/
+                color:black; /*text berwarna hitam*/
+                border-color: red; /*boder berwarna merah*/
+                background-color: salmon; /*background tombol berwarna salmon*/
+                margin-top: 10px; /*jarak margin atas 10px*/
+                margin-bottom: 10px; /*jarak margin bawah 10px*/
+            }
+            .tampil{ /*memberikan style pada tombol tampil*/
+                color:black; /*text berwarna hitam*/
+                border-color: red; /*boder berwarna merah*/
+                background-color: salmon; /*background tombol berwarna salmon*/
+                margin-top: 10px; /*jarak margin atas 10px*/
+                margin-bottom: 10px; /*jarak margin bawah 10px*/
+            }
+        </style>
+    </head>
+    <body>
+        <h1>WEBSITE AJENG LARAS</h1> <!--menambahkan judul text website-->
+        <h3>Klik Tombol untuk menyembunyikan dan menampilkan gambar</h3> <!--menambahkan text-->
+        <br>
+        <button class="sembunyi">sembunyikan</button> <!--menambahkan button, jika diklik maka akan gambar akan tersembunyi-->
+        <button class="tampil">tampilkan</button> <!--menambahkan button, jika diklik maka akan gambar akan tampil-->
+        <br>
+        <br>
+        <button class="sembunyi">sembunyikan</button> <!--menambahkan button, jika diklik maka akan gambar akan tersembunyi-->
+        <button class="tampil">tampilkan</button> <!--menambahkan button, jika diklik maka akan gambar akan tampil-->
+        <p><img id="foto" src="bigbang.jpg"></p> <!--menambahkan file image atau gambar-->
+    </body>
+</html>

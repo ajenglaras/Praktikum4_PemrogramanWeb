@@ -1,0 +1,52 @@
+<html>
+    <head>
+        <title>TUGAS 3</title>  <!--memberikan judul pada tab browser-->
+        <script src="jquery-3.6.0.min.js"></script> <!--memanggil file jquery yang telah disediakan-->
+        <script>
+        $(document).ready(function(){ /*menambahkan fungsi*/
+        $(".button1").click(function(){$("#div1").fadeIn();$("#div2").fadeIn("slow");$("#div3").fadeIn(3000);});
+        /*fungsi pada button1 jika diklik maka akan menampilkan efek fade in pada div1, div2, dan div3*/
+        $(".button2").click(function(){$("#div1").fadeOut();$("#div2").fadeOut("slow");$("#div3").fadeOut(3000);});
+        /*fungsi pada button1 jika diklik maka akan menampilkan efek fade out pada div1, div2, dan div3*/
+        $(".button3").click(function(){$("#div1").fadeTo("slow", 0.15);$("#div2").fadeTo("slow", 0.4);$("#div3").fadeTo("slow", 0.7);});
+        /*fungsi pada button1 jika diklik maka akan menampilkan efek fade to pada div1, div2, dan div3*/
+        $("#div1").addClass("merah"); /*membuat kelas merah untuk div1*/
+        $("#div2").addClass("kuning"); /*membuat kelas kuning untuk div2*/
+        $("#div3").addClass("hijau"); /*membuat kelas hijau untuk div3*/
+        });
+        </script>
+        <style type="text/css"> /*memberikan style css*/
+            body{
+                margin-left:auto;margin-right:auto;text-align: center;background:peachpuff;
+                /*meletakkan text dan item di tengah web dan warna background peachpuff*/
+            }
+            .merah {
+                margin-left:auto;margin-right:auto;text-align:center;;width:100px;height:100px;display:none;
+                background-color:red;
+                /*meletakkan text dan item di tengah web, lebar tinggi 100px, dan warna background merah*/
+            }
+            .kuning{
+                margin-left:auto;margin-right:auto;text-align:center;;width:100px;height:100px;display:none;
+                background-color:yellow;
+                /*meletakkan text dan item di tengah web, lebar tinggi 100px, dan warna background kuning*/
+            }
+            .hijau{
+                margin-left:auto;margin-right:auto;text-align: center;;width:100px;height:100px;display:none;
+                background-color:green;
+                /*meletakkan text dan item di tengah web, lebar tinggi 100px, dan warna background hijau*/
+            }
+        </style>
+    </head>
+    <body>
+        <h1 style="margin-top: 2cm;">WEBSITE AJENG LARAS</h1> <!--menambahkan text dengan jarak margin atas 2cm-->
+        <br>
+        <p>Coba Klik Tombol Fade In, Fade Out, dan Fade To di Bawah Ini</p> <!--menambahkan text-->
+            <div id="div1" ></div> <!--menampilkan item div1-->
+            <div id="div2" ></div> <!--menampilkan item div2-->
+            <div id="div3" ></div> <!--menampilkan item div3-->
+            <br>
+            <button class="button1">Fade In</button> <!--menambahkan button, jika diklik maka akan menampilkan efek fade in-->
+            <button class="button2">Fade Out</button> <!--menambahkan button, jika diklik maka akan menampilkan efek fade out-->
+            <button class="button3">Fade To</button> <!--menambahkan button, jika diklik maka akan menampilkan efek fade to-->
+    </body>
+</html>

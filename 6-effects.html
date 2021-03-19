@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <script type="text/javascript" src="jquery-3.6.0.min.js"></script> <!--memanggil file jquery yang telah disediakan-->
+        <script type="text/javascript"> /*menambahkan script dengan tipe javascript*/
+        $(document).ready (function (){ /*menambahkan fungsi yang akan dieksekusi di bawahnya*/
+        setTimeout (function (){ /*setting durasi waktu tampil pada text*/
+        $("#kotak").fadeOut ("slaw", function (){ /*menampilkan efek fadeout yang perlahan hilang*/
+        $("#kotak").remove(); /*menghilangkan text*/
+        });
+        }, 3000);
+        });
+        </script>
+        <style type="text/css"> /*memberikan style css*/
+        #kotak {
+        width : 300px; /*lebar 300px*/
+        height : 50px; /*tinggi 50px*/
+        background: lightyellaw; /*warna backround lightyellow*/
+        border : 1px solid black; /*border berukuran 1px dan berwarna hitam*/
+        padding : 5px; /*memberikan jarak 5px*/
+        }
+        </style>
+    </head>
+    <body>
+        <h3 id="kotak"> 
+            Perhatikan baik -baik teks ini, karena
+            teks akan hilang dalam hitungan 3 detik</h3> <!--menambahkan text -->
+    </body>
+</html>

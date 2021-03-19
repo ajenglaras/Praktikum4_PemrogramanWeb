@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <script type="text/javascript" src="jquery-3.6.0.min.js"></script>  <!--memanggil file jquery yang telah disediakan-->
+        <script type="text/javascript"> /*menambahkan script dengan tipe javascript*/
+        $(document).ready(function(){ /*menambahkan fungsi yang akan dieksekusi di bawahnya*/
+        $("#daftar").addClass("merahkuning");}); /*eksekusi fungsi untuk memberikan warna */
+        </script>
+        <style type="text/css">  /*memberikan style css*/
+        .merahkuning {
+        color: orange; /*text berwarna orange*/
+        font-weight: bold; /*ketebalan font dengan bold*/
+        background-color:green; /*background text berwarna hijau*/
+        padding: 3px; /*memberikan jarak 3px*/
+        }
+        </style>
+    </head>
+    <body>
+        <div>
+            <p>paragraf pertama</p> <!--menambahkan text list-->
+        </div>
+        <div>
+            <ul id="daftar">
+                <li>item 1</li> <!--isi list text-->
+                <li>item 2</li> <!--isi list text-->
+                <li>item 3</li> <!--isi list text-->
+            </ul>
+        </div>
+    </body>
+</html>

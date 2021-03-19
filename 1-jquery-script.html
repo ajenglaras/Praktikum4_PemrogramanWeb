@@ -1,0 +1,18 @@
+<html>
+    <head>
+        <script src="jquery-3.6.0.min.js"></script> <!--memanggil file jquery yang telah disediakan-->
+        <script type="text/javascript"> /*menambahkan script dengan tipe javascript*/
+        $(document).ready(function(){ /*menambahkan fungsi yang akan dieksekusi di bawahnya*/
+        $(".sembunyi").click(function() {$("#foto").hide("slow") }); /*fungsi untuk menyembunyikan elemen image*/
+        $(".tampil").click(function() {$("#foto").show("slow") }); /*fungsi untuk menampilkan elemen image*/
+        });
+        </script>
+    </head>
+    <body>
+        <button class="sembunyi">sembunyikan</button> <!--menambahkan button sembunyi, jika tombol ditekan 
+        maka gambar akan disembunyikan-->
+        <button class="tampil">tampilkan</button> <!--menambahkan button tampilkan, jika tombol ditekan 
+            maka gambar akan ditampilkan-->
+        <p><img id="foto" src="bigbang.jpg"></p> <!--menambahkan file image atau gambar-->
+    </body>
+</html>

@@ -1,0 +1,47 @@
+<html>
+    <head>
+        <title>TUGAS 2</title> <!--memberikan judul pada tab browser-->
+        <script src="jquery-3.6.0.min.js"></script> <!--memanggil file jquery yang telah disediakan-->
+        <script>
+        $(function(){ /*menambahkan fungsi*/
+            $('.ganti-warna a').dblclick(function(e){ /*menambahkan fungsi ganti warna dengan double click*/
+                e.preventDefault(); /*funsi e*/
+                var bg = $(this).data("color"); /*membuat variabel bg dengan tambahan data warna*/
+                $(this).css('background',bg); /*mengubah warna background item*/
+            });
+        });
+        </script>
+        <style>
+            body{ /*memberikan style pada body*/
+                text-align: center; /*meletakkan text beserta item di tengah halaman web*/
+                margin-top: 4cm;  /*jarak margin atas 4cm*/
+                background-color: lightgreen; /*background berwarna lightgreen*/
+            }
+            .bg{ /*menempatkan item pada posisi dengan jarak 0 atas,bawah,kiri,kanan*/
+                top:0; 
+                bottom:0;
+                left:0;
+                right:0;
+                z-index: -9;
+            }
+            a {
+                padding: 50px; /*memberikan jarak 50px*/
+                font: 40px sans-serif; /*ukuran font 40px dan style sans-serif*/
+            }
+        </style>
+    </head>
+    <body>
+        <h1>WEBSITE AJENG LARAS</h3> <!--memberikan judul website-->
+        <h3>Ubah Warna " Double click pada kotak di bawah "</h5> <!--menambahkan text-->
+        <br><br><br><br>
+        <div class="ganti-warna"> <!--menampilkan ganti warna pada fungtion di atas-->
+            <a style="background-color: palevioletred;" href="#" data-color="red">Merah</a> <!--kotak berwarna palevioletred 
+            dan jika di klik akan menjadi merah-->
+            <a style="background-color: lightskyblue" href="#" data-color="blue">Biru</a> <!--kotak berwarna lightskyblue 
+                dan jika di klik akan menjadi biru-->
+            <a style=" background-color: darkkhaki;" href="#" data-color="yellow">Kuning</a> <!--kotak berwarna darkkhaki
+                dan jika di klik akan menjadi kuning-->
+        </div>
+        <div class="bg"></div> <!--menampilkan fungsi dan style bg-->
+    </body>
+</html>
